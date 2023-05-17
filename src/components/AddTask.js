@@ -3,6 +3,10 @@ const AddTask = ({tasks,setTasks,input,setInput}) => {
     const handleSubmit=(e)=>{
         e.preventDefault();
 
+        if(input.name===undefined || input.name===""){
+            alert("Please enter your task.");
+            return;
+        }
         if(input.id){
             const date=new Date();
             const updateTask=tasks.map((task)=>(

@@ -6,7 +6,6 @@ const ShowTask = ({tasks,setTasks,setInput}) => {
     // const clickedDeleteBtn=e.target.parentElement.id;
     const filter = tasks.filter((item)=>item.id!==Number(taskId));
     setTasks([...filter]);
-
   }
   const handleEdit=(taskId)=>{
       const filterObject = tasks.find((item)=>item.id===Number(taskId));
