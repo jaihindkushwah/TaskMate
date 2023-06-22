@@ -1,4 +1,5 @@
 // import Logo "../Assests/"
+import logo from "./logo192.png"
 
 const Header = ({themeActive,setThemeActive}) => {
   
@@ -6,7 +7,7 @@ const Header = ({themeActive,setThemeActive}) => {
   return (
     <header>
         <div className="logo">
-            <img src="https://raw.githubusercontent.com/ShubhamSarda/taskmate-react/7a0d31091ac65ffc3182bc6ae72998dcdd8ef77f/src/assets/logo.svg" alt="TaskMate Logo" />
+            <img src={logo} alt="TaskMate Logo" />
             <span>TaskMate</span>
         </div>
         <div className="themeSelector">
